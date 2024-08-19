@@ -1,0 +1,522 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* lobster static font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(208, 201, 192);
+}
+.navbar{
+    
+    text-align: center;
+    padding: 5px 5px;
+    background-color: rgb(161, 204, 190);
+}
+.nav-logo img{
+    width: 100px;
+    margin-top: 20px;
+}
+.nav-heading .text{
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: "Noto Serif", serif;
+    background: linear-gradient(90deg,rgb(104, 90, 185), rgb(202, 53, 177),rgb(104, 90, 185));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-menu{
+       display: flex;
+       width: 100%;
+       
+       flex-direction: column;
+       margin-top: 15px;
+       background-color:rgb(161, 204, 190);
+}
+.nav-menu a{
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+   
+    color: white;
+    background-color:rgb(162, 176, 132);
+}
+.nav-menu a:hover{
+    background-color:rgb(201, 218, 164);
+    color: rgb(190, 129, 43);
+}
+/* for desktop */
+[class*="col-"]{
+   float: left;
+   padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+/* profile part start */
+
+
+            .profile{
+                position: relative;
+                text-align: center;
+                margin-top: 20px;
+                padding: 20px;
+                
+                height: 550px;
+
+            }
+            .circle{
+                width: 100px;
+            }
+            .profile .img-top{
+                position:absolute;
+            }
+            
+
+            .profile .img-top{
+                position: absolute;
+                right: 50px;
+                top:20px;
+                transition: transform 5s;
+            }
+            .profile .img-top:hover{
+                transform: rotate(360deg);
+            }
+            .profile-desc h1{
+                margin: 110px 0 5px 0;
+                font-family: "Lobster", sans-serif;
+                font-size: 3rem;
+            }
+            .profile-desc p{
+                padding: 10px 10px 30px 10px;
+                color: gray;
+            }
+            .profile .img-bottom{
+                position: absolute;
+                left: 50px ;
+                transition: transform 4s;
+            }
+            .profile .img-bottom:hover{
+                transform: rotate(360deg);
+            }
+            .profile::after{
+                content: '';
+                display: table;
+
+                clear: both;
+            }
+
+
+/* profile part end */
+/* about part start */
+
+.about-section{
+    background-color: rgb(99, 99, 193);
+    color: white;
+}
+.about-header{
+    color: white;
+}
+.about-header h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.dotted-hr{
+    width: 200px;
+    margin: 0 auto;
+    border: white dotted 8px;
+    border-bottom: none;
+}
+.about-profile-pic{
+    text-align: center;
+    padding: 20px;
+}
+.about-profile-pic img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-desc{
+    text-align: center;
+}
+.about-desc p{
+    margin: 25px;
+}
+.common-hr{
+    width: 80%;
+    margin: 0 auto;
+}
+.about-desc a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+}
+p .cv-button{
+    margin: 10px;
+    padding: 10px 25px 10px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+}
+p .cv-button:hover{
+    background-color: rgb(48, 40, 40);
+    color: white;
+}
+
+
+/* about part start */
+/* professional part start */
+
+.pro-section{
+    background-color: rgb(195, 195, 175);
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+.experience-card{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    
+    border-radius: 20px;
+    background-color: rgb(194, 153, 153);
+    text-align: center;
+}
+.experience-card img{
+    width: 60px;
+    border: 4px solid rgb(17, 17, 17);
+    border-radius: 50%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: white;
+}
+.experience-card h1{
+    
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgb(92, 92, 167);
+    border-radius: 5px;
+}
+.experience-card .institution{
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.institution .p{
+    font-weight: bold;
+}
+.experience-card ul{
+    list-style-position: outside;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+.experience-card li{
+    margin: 20px;
+}
+.experience-card span{
+    font-weight: bolder;
+}
+.education-card{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top:20px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(194, 153, 153);
+}
+.education-card img{
+    width: 60px;
+    border: 4px solid rgb(20, 20, 20);
+    border-radius: 50%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: white;
+}
+.education-card h1{
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgb(92, 92, 167);
+    border-radius: 5px;
+}
+.education-card ul{
+    padding: 50px;
+    list-style-position: outside;
+    text-align: left;
+}
+.education-card li{
+    margin: 10px;
+}
+.skills-card{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top:20px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(194, 153, 153);
+}
+.skills-card img{
+    width: 60px;
+    border: 4px solid rgb(20, 20, 20);
+    border-radius: 50%;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: white;
+}
+.skills-card h1{
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgb(92, 92, 167);
+    border-radius: 5px;
+}
+.skills-card ul{
+    list-style: none;
+    text-align: left;
+    margin: 40px;
+    text-transform: uppercase;
+}
+.skills-card li{
+    margin: 30px;
+    position: relative;
+}
+.skills-card li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 100%;
+    height: 10px;
+    background-color: rgb(132, 132, 207);
+    border-radius: 1000px;
+}
+.skills-card li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 0;
+    left: 0;
+    height: 10px;
+    background-color: rgb(66, 66, 144);
+    border-radius: 1000px;
+
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.skills-card li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skills-card li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.skills-card li.bootsrap::after{
+    animation-name: bootsrap;
+}
+@keyframes bootsrap{
+    to{
+        width: 90%;
+    }
+}
+.skills-card li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+    to{
+        width: 60%;
+    }
+}
+.skills-card li.react::after{
+    animation-name: react;
+}
+@keyframes react{
+    to{
+        width: 95%;
+    }
+}
+.skills-card li.python::after{
+    animation-name: python;
+}
+@keyframes python{
+    to{
+        width: 75%;
+    }
+}
+.skills-card li.node-js::after{
+    animation-name: node-js;
+}
+@keyframes node-js{
+    to{
+        width: 60%;
+    }
+}
+.skills-card li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 95%;
+    }
+}
+.experience-card:hover{
+      box-shadow: 10px 10px 40px rgb(178, 33, 57);
+}
+.education-card:hover{
+      box-shadow: 10px 10px 40px rgb(178, 33, 57);
+}
+.skills-card:hover{
+      box-shadow: 10px 10px 40px rgb(178, 33, 57);
+}
+/* professional part start */
+
+
+/* last part start */
+     
+.last-part{
+    background-color: rgb(53, 155, 184);
+    color: white;
+    text-align: center;
+}
+.last-part h1{
+    text-align: center;
+    padding-top: 25px;
+}
+.last-part hr{
+    width: 200px;
+    margin: 0 auto;
+    border: 4px solid white;
+}
+.last-part ol{
+    list-style-type: decimal;
+    padding: 50px;
+}
+.last-part li{
+    margin: 10px;
+    text-align: left;
+}
+.last-part form{
+    margin: 30px;
+}
+.last-part form input,textarea{
+    margin:10px;
+    padding:4px 30px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+.last-part form button{
+    margin: 5px 15px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    background-color: rgb(213, 205, 205);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+.last-part form button:hover{
+    background-color: rgb(109, 82, 82);
+    color: white;
+}
+
+.more-contact{
+    
+}
+.media-button button{
+    margin: 100px 10px;
+    font-size: 32px;
+    padding:5px;
+    padding-top: 7px;
+    border: none;
+    border-radius:8px;
+    text-align: center;
+    /* color: white; */
+    cursor: pointer;
+}
+.media-button button:hover{
+      background-color: rgb(207, 194, 194);
+}
+.media-button .bxl-facebook{
+           color: #1877F2;
+}
+.media-button .bxl-twitter{
+           color:	#1DA1F2;
+}
+.media-button .bxl-instagram{
+           color: #db16a7;
+}
+.media-button .bxl-youtube{
+           color: 	#FF0000;
+}
+.media-button .bxl-linkedin{
+           color: #0077B5;
+}
+.media-button .bxl-github{
+           color: #24292e;
+}
+/* last part end */
+/*footer start */
+               .footer{
+                background-color: black;
+                color:white;
+                text-align: center;
+                padding: 20px;
+               }
+               .footer a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+               }
+               .footer a:hover{
+                    color: gray;
+               }
+               .footer .part-2{
+                color: gray;
+                font-size: 15px;
+                margin-top:20px;
+                
+               }
+/*footer end */
+                
+               

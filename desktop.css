@@ -1,0 +1,155 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.navbar{
+    background-color: rgb(153, 234, 234);
+}
+.nav-logo{
+    text-align:left;
+    padding: 5px;
+}
+.nav-logo img{
+    margin-top: 10px;
+}
+.nav-heading{
+    text-align: right;
+    margin-top: 10px;
+    padding: 5px;
+    
+    
+}
+.nav-heading .text{
+    text-align: right;
+    
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(153, 234, 234);
+}
+.nav-menu a{
+    padding: 0 10px;
+    font-size: 25px;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* nav part end */
+
+/* profile part start */
+  
+ .profile .img-top{
+    right:220px;
+    transition:width 2s transform 4s;
+ }
+ .profile .img-top:hover{
+    width: 140px;
+ }
+ .profile .img-bottom{
+    left:220px;
+    transition: width 2s transform 2s;
+ }
+ .profile .img-bottom:hover{
+    width:140px;
+ }
+.profile-desc p{
+     padding: 30px 175px;
+}
+.profile::after{
+    content: '';
+    display: table;
+    
+    clear: both;
+}
+/* profile part end */
+/* about part start */
+
+.about-header{grid-area: header;}
+.about-profile-pic{grid-area: pic;}
+.about-desc{grid-area: desc;}
+.about-section{
+    display: grid;
+    grid-template-areas: 'header header'
+                          'pic desc';
+
+}
+.about-header{
+   padding-left: 400px;
+}
+
+.about-profile-pic{
+    width: 500px;
+    margin: auto 0;
+}
+.about-profile-pic img{
+    width: 400px;
+    height: 350px;
+}
+.about-desc{
+    width: 100%;
+    text-align: left;
+}
+.common-hr{
+    margin: 25px;
+}
+
+
+/* about part end */
+/* professional part start */
+ .experience-card{exp ;}
+ .education-card{edu ;}
+ .skills-card{skill ;} 
+.pro-section{
+    display: grid;
+    grid-template-areas: 'exp edu skill';
+    
+ }
+ .experience-card{
+    margin-top: 20px;
+ }
+
+/* professional part start */
+/* last part start */
+
+.achivement{grid-area: achivement;}
+.contact-me{grid-area: contact;}
+.more-contact{grid-area: mcontact;}
+.last-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'achivement contact mcontact';
+    
+}
+
+
+/* last part end */
+/* footer start */
+                   .footer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    
+                   }
+                   .footer a{
+                    display: inline;
+                    
+                   }
+                   .footer .part-1{
+                    margin-top: 20px;
+                
+                   }
+/* footer end */
